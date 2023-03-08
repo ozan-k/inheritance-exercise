@@ -1,34 +1,15 @@
 class Runner {
 
-  public static Sortable getBiggest(Sortable s1, Sortable s2, Sortable s3) {
-    Sortable biggest = s1;
-
-    if (s2.isBiggerThan(biggest) > 0)
-      biggest = s2;
-
-    if (s3.isBiggerThan(biggest) > 0)
-      biggest = s3;
-
-    return biggest;
-  }
-
   public static void main(String[] args) {
-    Building b1 = new Building(20);
-    Building b2 = new Building(80);
-    Building b3 = new Building(60);
+    InverseString inv1 = new InverseString("Tiago");
+    System.out.println(inv1);
 
-    Building tallestBuilding = (Building) getBiggest(b1, b2, b3);
-    System.out.println("The tallest building is " +
-            tallestBuilding.getHeight() + "m high.");
+    InverseString inv2 = new InverseString("Davi");
+    System.out.println(inv2);
 
-    Land l1 = new Land(20, 30);
-    Land l2 = new Land(10, 5);
-    Land l3 = new Land(25, 25);
-
-    Land biggestLand = (Land) getBiggest(l1, l2, l3);
-    System.out.println("The biggest land is " + biggestLand.getArea() + "m2 (" +
-            biggestLand.getLength() + "x" + biggestLand.getWidth()+").");
-
+    System.out.println("charAt(2) = " + inv2.charAt(2));
+    System.out.println("length() = " + inv2.length());
+    System.out.println("subSequence(0, 2) = " + inv2.subSequence(0, 2));
   }
 
 }
