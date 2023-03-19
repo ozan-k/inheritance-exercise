@@ -1,16 +1,20 @@
-public class Something{
-  private int a;
+public class Something implements Cloneable {
+    public int a = 0;
 
-  public Something(int a){
-    this.a = a;
-  } 
+		public Something(int a) {
+        this.a = a;
+    }
 
-  public int getA(){
-    return a;
-  }
+    public int getA() {
+        return a;
+    }
 
-  public void setA(int value){
-    this.a = value; 
-  }
+    public void setA(int a) {
+        this.a = a;
+    }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
