@@ -1,3 +1,3 @@
-interface DrawablePrintableClearable extends Drawable, Clearable {
+interface DrawablePrintableClearable extends Drawable, Printable {
     void clear();
 }
