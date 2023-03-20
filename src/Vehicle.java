@@ -1,40 +1,15 @@
-class Vehicle {
-   private String make;
-   private String model;
-   private int year;
+public class Vehicle {
+  private String licensePlate;
 
-   Vehicle(String make, String model, int year)   {
-      this.make = make;
-      this.model = model;
-      this.year = year;
-   }
+  public Vehicle(String licensePlate){
+      this.licensePlate = licensePlate;
+  }
 
-   public String getMake(){
-       return make;
-   }
+  public String getLicensePlate() {
+    return licensePlate;
+  }
 
-   public String getModel(){
-       return model;
-   }
-
-   public int getYear(){
-       return year;
-   }
-
-   public void setMake(String newMake){
-       make = newMake;
-   }
-
-   public void setModel(String newModel){
-       model = newModel;
-   }
-
-   public void setYear(int newYear){
-       year = newYear;
-   }
-
-
-   void print() {
-     System.out.println("Make: " + make + ", Model: " + model + ", Year: " + year);
-   }
+  public void setLicensePlate (String licensePlate) {
+    this.licensePlate = licensePlate;
+  }
 }
