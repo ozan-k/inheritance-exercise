@@ -1,7 +1,7 @@
 public class Something implements Cloneable {
     public int a = 0;
 
-		public Something(int a) {
+    public Something(int a) {
         this.a = a;
     }
 
