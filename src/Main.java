@@ -17,7 +17,5 @@ public class Main {
         b2.methodB(); //downcasting
 
         B b3 = (B) new A();
-        b3.methodA();
-        b3.methodB();	//runtime error
     }
 }
